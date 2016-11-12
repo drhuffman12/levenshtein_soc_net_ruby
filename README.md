@@ -4,7 +4,9 @@ Homepage: https://github.com/drhuffman12/levenshtein_soc_net_ruby
 
 Calculate the 'social network' quantity for a group of words based on their Levenshtein Distance and Letter Histograms.
 
-* See: https://www.codeeval.com/public_sc/58/
+* See:
+  - [the_challenge/CHALLENGE_RULES.md](the_challenge/CHALLENGE_RULES.md).
+  - [the_challenge/MY_CONCEPT.md](the_challenge/MY_CONCEPT.md).
 
 ## Installation
 

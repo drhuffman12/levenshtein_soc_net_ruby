@@ -1,0 +1,6 @@
+horrid,1
+basement,5
+abbey,2
+recursiveness,1
+elastic,1
+macrographies,1
