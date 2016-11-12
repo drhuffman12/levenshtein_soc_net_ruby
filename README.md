@@ -1,8 +1,10 @@
-# LevenshteinSocNetRuby
+# Levenshtein Social Network (Ruby implementation)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/levenshtein_soc_net_ruby`. To experiment with that code, run `bin/console` for an interactive prompt.
+Homepage: https://github.com/drhuffman12/levenshtein_soc_net_ruby
 
-TODO: Delete this and the text above, and describe your gem
+Calculate the 'social network' quantity for a group of words based on their Levenshtein Distance and Letter Histograms.
+
+* See: https://www.codeeval.com/public_sc/58/
 
 ## Installation
 
@@ -22,7 +24,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+net = LevenshteinSocNetRuby.new(input_file_path, max_lines)
+net.run
+
+# Then, either of the following:
+net.soc_net_for_test_words
+net.save(output_file_path) # saves net.soc_net_for_test_words to output_file_path
+```
 
 ## Development
 
