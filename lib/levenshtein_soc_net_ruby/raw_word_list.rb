@@ -35,15 +35,15 @@ class RawWordList
   # end
 
   def add(word, is_test = false)
-    unless all.include?(word)
+    # unless all.include?(word)
       @test << word if is_test
       clean_word = self.class.raw_to_clean(word)
       @meta[word] = {raw_length: word.length, clean_length: clean_word.length, clean_word: clean_word}
-    else
-      msg = "RawWord already exists for word: '#{word}'"
-      puts msg
-      # raise msg
-    end
+    # else
+    #   msg = "RawWord already exists for word: '#{word}'"
+    #   puts msg
+    #   # raise msg
+    # end
     @meta[word]
   end
 

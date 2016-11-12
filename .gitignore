@@ -7,3 +7,7 @@
 /pkg/
 /spec/reports/
 /tmp/
+
+# Ignore all log files.
+/log/*
+!/log/.keep
