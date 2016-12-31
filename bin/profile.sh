@@ -21,16 +21,16 @@ bin/profile.rb $log_path "$*"
  # > log/levenshtein_soc_net_ruby.log
 #--track-origins=yes
 
-## move profile data under log_path:
-#echo "Wait for callgrind file to be filled; sleeping .."
-#sleep 5
-#echo "profile.sh -> pwd: $(pwd)"
-#files=$(ls ./callgrind.out.* 2> /dev/null | wc -l)
-#until [ **"$files" != "0"** ]
-#do
-#  echo "Callgrind file not found; sleeping .."
-#  sleep 5
-#done
-#echo "Callgrind file found; moving.."
-#mv callgrind.out.* $log_path
-#exit
+# move profile data under log_path:
+echo "Wait for callgrind file to be filled; sleeping .."
+sleep 5
+echo "profile.sh -> pwd: $(pwd)"
+files=$(ls ./callgrind.out.* 2> /dev/null | wc -l)
+until [ **"$files" != "0"** ]
+do
+  echo "Callgrind file not found; sleeping .."
+  sleep 5
+done
+echo "Callgrind file found; moving.."
+mv callgrind.out.* $log_path
+exit

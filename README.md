@@ -10,6 +10,12 @@ Calculate the 'social network' quantity for a group of words based on their Leve
 
 ## Installation
 
+To install native extensions, you might need to first do something like:
+
+```sh
+sudo apt-get install ruby-dev
+```
+
 Add this line to your application's Gemfile:
 
 ```ruby
